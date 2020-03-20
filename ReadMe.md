@@ -21,3 +21,32 @@ First things first the reason I have chosen to do this is because:
 
 Okay lets start coding.
 If I randomly stop coding I might just have lost myself in the music playing, I'll try edit those out.
+This will be the worst readme file ever.
+
+Sorry Using windows to capture screenshots on the other side
+
+Lack of planning just hit me. I need to think about the navigation items I want.
+Which means I need to consider the things I want to place in the site.
+
+    1.  Career and Vocation.
+    2.  Family and Friends (going to have to throw my sister under the bus here and talk about her life. Mine is not that interesting)
+    3.  a personal thank you based on who they are.
+
+I think I can get all of that done.
+I need need to go find some icons to use. this man in the video swears by font awesome.
+I'm going to stop the recording here and come back when I do
+
+Found a few Icons I liked. lets see them in action.
+Sorry it's been a while since last I looked at this project. Time to move forward.
+
+Had to do some searching to find the paths. I don't know what the prescribed method is but this is how I did it
+    1.  find the icon you are looking for
+    2.  inspect the icon by right clicking on it and selecting inspect
+    3.  the svg tag should show and you can copy the d value which is a long string
+
+Also I copied the code from the repo that Fireship has and pasted that in.
+
+Okay it's looking good so far. Back to the tutorial video to see the next steps
+First lets commit and push these changes. Such bad habits
+
+
