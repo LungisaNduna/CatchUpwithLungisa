@@ -49,4 +49,5 @@ Also I copied the code from the repo that Fireship has and pasted that in.
 Okay it's looking good so far. Back to the tutorial video to see the next steps
 First lets commit and push these changes. Such bad habits
 
-
+Great its working out so far
+We no longer need the file
