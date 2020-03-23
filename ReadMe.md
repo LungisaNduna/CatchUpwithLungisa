@@ -51,3 +51,9 @@ First lets commit and push these changes. Such bad habits
 
 Great its working out so far
 We no longer need the file
+
+Really looking good. Just following the steps without any changes really. Reallllly Nice
+
+Moving onto mobile
+
+Okay so we are done with the video and now it's time for me to move forward on my own. Thinking I should have an about section maybe though. let me add that in
