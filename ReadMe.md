@@ -56,4 +56,22 @@ Really looking good. Just following the steps without any changes really. Realll
 
 Moving onto mobile
 
-Okay so we are done with the video and now it's time for me to move forward on my own. Thinking I should have an about section maybe though. let me add that in
+Okay so we are done with the video and now it's time for me to move forward on my own. Thinking I should have an about section maybe though. let me add that in.
+
+Welcome back guys. It has been a while due to some fustrations of not being able to find a solution to a problem
+
+The core problem is trying to load html pages dynamically.
+First thing I did was create some mark up I would like to use. All these are in the folder pages.
+This makes up the content, then I want to load it the content dynamically. Sounds like fun right so lets go ahead.
+
+I will be using the .load function which loads content from another file.
+Well that was easy why did I get frustrated for 3 days. Because of testing
+When you try run that code locally there may be some issues with the functionality and you may get a CORS error.
+    This is because .load() uses AJAX and for security reasons most browsers (in my case firefox, chrome and Edge) 
+        will not allow local content to be called in this fashion.
+    I fixed it by first closing all instances of Chrome running on my computer
+    Then you need to open chrome in the command line with the following tag -–allow-file-access-from-files
+    Found this out at https://github.com/BsAtHome/atpack/issues/2. They have more information check it out if you are having the same issues.
+
+Anyway that complete I found a new tutorial on creating information cards so I want to try it out for displaying the content on the individual pages. So far I have placed most of the content in a way that is somewhat good but lets go forth with a new tutorial.
+
