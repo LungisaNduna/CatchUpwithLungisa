@@ -53,6 +53,10 @@ main {
     width: 100%;
 }
 
+.nav-item:last-child{
+    margin-top: auto;
+}
+
 .logo {
     font-weight: bold;
     text-transform: uppercase;
