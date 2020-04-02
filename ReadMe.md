@@ -75,3 +75,7 @@ When you try run that code locally there may be some issues with the functionali
 
 Anyway that complete I found a new tutorial on creating information cards so I want to try it out for displaying the content on the individual pages. So far I have placed most of the content in a way that is somewhat good but lets go forth with a new tutorial.
 
+Forgot to connect the function to any actual event. Now it works on every occurance of the 
+hash in the URL changing which happens whenever I click the button. I should probably have a way to handle people adding their own hashes
+Looking good, i think.
+

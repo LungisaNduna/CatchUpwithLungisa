@@ -7,7 +7,7 @@
     <title>Catch Up with Lungisa</title>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
-<body>
+<body onhashchange="loadContent()">
 
   <nav class="navbar">
     <ul class="navbar-nav">
@@ -199,8 +199,12 @@
   </main>
 
   <script>
-    // check the hash
+    $(function(){
+      loadContent();
+    });
+
     function loadContent(){
+      // TO-DO protect against people injecting their own hashes.
       var page = (window.location.hash == null || window.location.hash == undefined || window.location.hash == "") ? "#Home" : window.location.hash;
       var location = page.replace("#", "Pages/") + "html";
       $("#content-main").load(location);
