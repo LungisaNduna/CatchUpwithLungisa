@@ -162,3 +162,90 @@ main {
         display: block;
     }
 }
+
+/* This section is for the cards with more information */
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .InfoBox{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 5px 10px #888888;
+    border-radius: 5px;
+}
+
+.container .InfoBox .boxImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    clip-path: circle(400px at center 100px);
+    transition: 0.5s;
+}
+
+.container .InfoBox:hover .boxImage{
+    clip-path: circle(90px at center 100px);
+}
+
+.container .InfoBox .boxImage img{
+    object-fit: cover;
+}
+
+.container .InfoBox:hover .boxImage img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .InfoBox .boxContent{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container .InfoBox .boxContent h2{
+    margin: 0;
+    padding: 0;
+}
+
+.container .InfoBox .boxContent h2,
+.container .InfoBox .boxContent p,
+.container .InfoBox .boxContent button{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate(20px);
+}
+.container .box:hover .boxContent h2{
+    opacity: 1;
+    transform: translate(0px);
+    transition-delay: 0.5s;
+}
+.container .InfoBox:hover .boxContent p{
+    opacity: 1;
+    transform: translate(0px);
+    transition-delay: 0.7s;
+}
+.container .InfoBox:hover .boxContent button{
+    opacity: 1;
+    transform: translate(0px);
+    transition-delay: 1s;
+}

@@ -78,4 +78,7 @@ Anyway that complete I found a new tutorial on creating information cards so I w
 Forgot to connect the function to any actual event. Now it works on every occurance of the 
 hash in the URL changing which happens whenever I click the button. I should probably have a way to handle people adding their own hashes
 Looking good, i think.
+Cannot push cause the internet is being an enemy of progress.
+
+
 

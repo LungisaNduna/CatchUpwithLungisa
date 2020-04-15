@@ -206,7 +206,8 @@
     function loadContent(){
       // TO-DO protect against people injecting their own hashes.
       var page = (window.location.hash == null || window.location.hash == undefined || window.location.hash == "") ? "#Home" : window.location.hash;
-      var location = page.replace("#", "Pages/") + "html";
+      var location = page.replace("#", "Pages/") + ".html";
+      console.log(location);
       $("#content-main").load(location);
     }
   </script>
