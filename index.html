@@ -201,6 +201,10 @@
   <script>
     $(function(){
       loadContent();
+      if (localStorage.getItem("LungisaAppName") == null){
+        name = prompt("Please enter your name");
+        localStorage.setItem("LungisaAppName"); 
+      }
     });
 
     function loadContent(){
