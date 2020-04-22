@@ -1,0 +1,115 @@
+<main>
+
+    <h1>Hello <span id="name"></span></h1>
+    <p>There is a message here for you</p>
+    
+    <div id="SpecialThanks"></div>
+
+    
+
+    <!--Need to add this section because I am testing this page seperately. Must remove when done. -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script>
+        $(function(){
+            // The messages stored as variables.
+            var UncleLeo =  `<p>Thank you for all You have done for not only me but also Vuyo.</p>
+                            <p>You and Aunt Linda have provided so much especially in this time. I appreciate the time you have given to help with even advise.</p>
+                            <p>I hope things continue to go well for you and yours.</p>`;
+            var AuntLinda = `<p>Thank you for all the things you have done</p>
+                            <p>We still speak about your macaroni and cheese, I will be back for your food. If your food is all anyone is ever told about you it is enough
+                                <ul><li>made with love</li><li>memorable</li><li>good for you</li></ul>
+                            </p>`;
+            var Mom =   `<p>Mom, I love you. And I remember everything you have done for me.</p>
+                        <p>I thank you for all of it.</p>
+                        <p>I promised you I would make it rich. That said I only hope to be as rich as you are love. 
+                            If I could give half as much as you that would be enough.</p>`;
+            var Dad =   `<p>Time gives perspective on all things. We may have not always seen eye to eye but you are an amazing father.</p>
+                        <p>If there is anything that people say about me in the future I hope that they say that no matter where my child was in the world I would find them if they needed me</p>
+                        <p>I can't wait to take another trip with you though. Sounds like it will be fun.</p>`;
+            var UncleFix =  `<p>Hey Uncle Fix, thank you very much for helping me get to where I am. 
+                            Thank you for being there for me</p>
+                            <p>I am here because of you.</p>`;
+            var Makazi =    `<p>Hey Makazi, thank you for being you. Be there sometime soon.</p>`;
+            var Joseph =    `<p>Hey buddy. Where you at? let's get on this game thing [NBA 2k21 when it comes out].</p>
+                            <p>RAGE this year with Vuyo if lockdown happens this year.</p>
+                            <p>Please show Ntokozo that I haven't forgotten her.</p>`;
+            var JoziCous =  `<p>Sorry Cous, this isn't unique but I appreciate the love and support. Sorry I haven't seen you in a long time.</p>
+                            <p>let's make this happen.</p>`;
+            var AKUnathi =  `<p>Akhona/Unathi I didn't have time to write something for each person. Stop comparing notes</p>`;
+            var ELCousin =  `<p>Hey Cousin. This isn't a very personalised message.</p>
+                            <p>I know I haven't come home for a long time but am planning to come through soon enough.</p>`;
+
+            // showing messages
+            var name = localStorage.getItem("LungisaAppName");
+            var message = ``;
+            switch(name) {
+                case "Leo":
+                case "Leo Mlambo":
+                case "Uncle Leo":
+                    message = UncleLeo;
+                    break;
+                case "Linda":
+                case "Linda Mlambo":
+                case "Aunt Linda":
+                    message = AuntLinda;
+                    break;
+                case "Fikile":
+                case "Uncle Fiks":
+                case "Fikile Seti":
+                case "Fiks":
+                case "Fix":
+                    message = UncleFix;
+                    break;
+                case "Lunga":
+                case "Lunga Lungisa Nduna":
+                case "Lunga Nduna":
+                case "Dad":
+                message = Dad;
+                    break;
+                case "Ntombizodwa":
+                case "Zodwa":
+                case "Ntombizodwa Seti":
+                case "Zodwa Seti":
+                case "Mom":
+                message = Mom;
+                    break;
+                case "Mpumi":
+                case "Nompumelelo Booi":
+                case "Makazi":
+                message = Makazi;
+                    break;
+                case "Joseph":
+                case "Joseph Sethole":
+                case "Joseph Sithole":
+                message = Joseph;
+                    break;
+                case "Akhona":
+                case "Unathi":
+                case "Amanda":
+                case "Feziwe":
+                message = JoziCous;
+                    if (name == "Akhona" || name == "Unathi") {message +=AKUnathi;}
+                    break;
+                case "Hlumelo":
+                case "Siya":
+                case "Kwezikazi":
+                case "Khanya":
+                case "Thobela":
+                case "Thozama":
+                message = ELCousin;
+                    break;
+                default:
+                    break;
+            }
+            var options = {
+                strings: [message],
+                typeSpeed: 40,
+                loop:false
+            };
+            var typed = new Typed('#SpecialThanks', options);
+        });
+    </script>
+</main>

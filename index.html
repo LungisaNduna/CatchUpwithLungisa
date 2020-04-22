@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Catch Up with Lungisa</title>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 <body onhashchange="loadContent()">
 
@@ -133,7 +134,7 @@
       </li>
 
       <!--The personalised thank you section. Hopefully I can make this part work-->
-      <li class="nav-item">
+      <li class="nav-item" id="ThankYouSection">
         <a href="#ThankYou" class="nav-link">
           <svg
             aria-hidden="true"
@@ -203,8 +204,48 @@
       loadContent();
       if (localStorage.getItem("LungisaAppName") == null){
         name = prompt("Please enter your name");
-        localStorage.setItem("LungisaAppName"); 
+        localStorage.setItem("LungisaAppName", name); 
       }
+      switch(localStorage.getItem("LungisaAppName")) {
+            case "Leo":
+            case "Leo Mlambo":
+            case "Uncle Leo":
+            case "Linda":
+            case "Linda Mlambo":
+            case "Aunt Linda":
+            case "Fikile":
+            case "Uncle Fiks":
+            case "Fikile Seti":
+            case "Fiks":
+            case "Fix":
+            case "Lunga":
+            case "Lunga Lungisa Nduna":
+            case "Lunga Nduna":
+            case "Dad":
+            case "Ntombizodwa":
+            case "Zodwa":
+            case "Ntombizodwa Seti":
+            case "Zodwa Seti":
+            case "Mom":
+            case "Mpumi":
+            case "Nompumelelo Booi":
+            case "Makazi":
+            case "Joseph":
+            case "Joseph Sethole":
+            case "Joseph Sithole":
+            case "Akhona":
+            case "Unathi":
+            case "Amanda":
+            case "Feziwe":
+            case "Hlumelo":
+            case "Siya":
+            case "Kwezikazi":
+            case "Khanya":
+            case "Thobela":
+            case "Thozama":
+              document.getElementById("ThankYouSection").style.display = "block";
+              break;
+        }
     });
 
     function loadContent(){

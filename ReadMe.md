@@ -80,5 +80,16 @@ hash in the URL changing which happens whenever I click the button. I should pro
 Looking good, i think.
 Cannot push cause the internet is being an enemy of progress.
 
+I have returned to the recording of this process. Hope what you missed doesn't matter too much.
+For what you have missed I did the most.
+Changed the general page UI got a new card system with shrinking images to reveal text about it.
+Need to concentrate.
+Next I want to add a new thing from a different video
+
+Can't see the content because I forgot to start Chrome in that special way. Need to wait I am busy downloading the video I have editted so far. This is frustrating.
+
+Okay so now it's time to handle the personalized thank you section. This seems as good a time as any other. Also it would be the 
+last thing I need to do.
+
 
 
