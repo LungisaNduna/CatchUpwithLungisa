@@ -34,6 +34,8 @@
             var AKUnathi =  `<p>Akhona/Unathi I didn't have time to write something for each person. Stop comparing notes</p>`;
             var ELCousin =  `<p>Hey Cousin. This isn't a very personalised message.</p>
                             <p>I know I haven't come home for a long time but am planning to come through soon enough.</p>`;
+            var Claud =  `<p>Hey man. Thanks for checking in with me.</p>
+                            <p>I know I haven't checked in in a while but I really want to come that side and see thing. One day, hopefully soon</p>`;
 
             // showing messages
             var name = localStorage.getItem("LungisaAppName");
@@ -79,6 +81,11 @@
                 case "Joseph Sithole":
                 message = Joseph;
                     break;
+                case "Claud":
+                case "Claudius":
+                case "Claudius Goremusandu":
+                message = Claud;
+                    break;
                 case "Akhona":
                 case "Unathi":
                 case "Amanda":
@@ -94,6 +101,7 @@
                 case "Thozama":
                 message = ELCousin;
                     break;
+
                 default:
                     break;
             }
